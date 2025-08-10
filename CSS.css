@@ -1,0 +1,88 @@
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: hsl(244, 96%, 50%);
+      text-align: center;
+      background-image: url("backround.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header, nav, footer {
+      background-color: #01ff4d66;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a.btn-sosmed {
+      display: inline-block;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, #ff3c3c, #ff9500);
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(255, 149, 0, 0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      font-size: 16px;
+    }
+
+    nav a.btn-sosmed:hover,
+    nav a.btn-sosmed:focus {
+      background: linear-gradient(135deg, #ff9500, #ff3c3c);
+      box-shadow: 0 6px 12px rgba(255, 60, 60, 0.6);
+      transform: translateY(-3px);
+      outline: none;
+    }
+
+    video {
+      margin: 20px auto;
+      display: block;
+      max-width: 90%;
+      height: auto;
+      border: 2px solid rgb(79, 8, 245);
+    }
+
+    .top-right-controls {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .top-right-controls select,
+    .top-right-controls button {
+      padding: 6px 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .dark-mode {
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      background-image: none;
+    }
+
+    .dark-mode header,
+    .dark-mode nav,
+    .dark-mode footer {
+      background-color: #333333aa;
+    }
